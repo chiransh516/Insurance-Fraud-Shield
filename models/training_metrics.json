@@ -1,0 +1,88 @@
+{
+  "training_timestamp": "2026-07-21T15:52:06.498961",
+  "training_duration_seconds": 1.79,
+  "dataset": {
+    "total_samples": 10000,
+    "fraud_count": 700,
+    "fraud_rate": 0.07,
+    "train_size": 8000,
+    "test_size": 2000
+  },
+  "fraud_classifier": {
+    "model_type": "XGBClassifier + SMOTE",
+    "best_params": {},
+    "accuracy": 0.957,
+    "precision": 0.6323529411764706,
+    "recall": 0.9214285714285714,
+    "f1_score": 0.75,
+    "roc_auc": 0.9896390168970814,
+    "confusion_matrix": [
+      [
+        1785,
+        75
+      ],
+      [
+        11,
+        129
+      ]
+    ],
+    "threshold_used": 0.5,
+    "classification_report": {
+      "0": {
+        "precision": 0.9938752783964365,
+        "recall": 0.9596774193548387,
+        "f1-score": 0.9764770240700219,
+        "support": 1860.0
+      },
+      "1": {
+        "precision": 0.6323529411764706,
+        "recall": 0.9214285714285714,
+        "f1-score": 0.75,
+        "support": 140.0
+      },
+      "accuracy": 0.957,
+      "macro avg": {
+        "precision": 0.8131141097864536,
+        "recall": 0.9405529953917051,
+        "f1-score": 0.863238512035011,
+        "support": 2000.0
+      },
+      "weighted avg": {
+        "precision": 0.9685687147910389,
+        "recall": 0.957,
+        "f1-score": 0.9606236323851204,
+        "support": 2000.0
+      }
+    }
+  },
+  "amount_regressor": {
+    "model_type": "XGBRegressor",
+    "best_params": {},
+    "trained_on_genuine_only": true,
+    "genuine_train_samples": 7440,
+    "genuine_test_samples": 1860,
+    "mae": 2040.5863879132014,
+    "rmse": 5715.334671765511,
+    "r2_score": 0.9716020288770834,
+    "mape": 0.09019577015782107,
+    "median_absolute_error": 808.6201171875
+  },
+  "feature_names": [
+    "customer_age",
+    "num_past_claims",
+    "vehicle_age",
+    "insured_declared_value",
+    "claim_amount_requested",
+    "coverage_amount",
+    "days_since_policy_start",
+    "claim_to_coverage_ratio",
+    "policy_duration_days",
+    "is_early_claim",
+    "customer_gender",
+    "customer_region",
+    "policy_type",
+    "vehicle_make",
+    "damage_type",
+    "damage_severity"
+  ]
+}
