@@ -114,17 +114,17 @@ The dashboard will run on `http://localhost:5173`.
 ## Model Performance
 
 ### Fraud Classifier (XGBoost + SMOTE)
-- **Accuracy**: 0.9570
-- **Precision**: 0.6324
-- **Recall**: 0.9214
-- **F1 Score**: 0.7500
-- **ROC AUC**: 0.9896
+- **Accuracy**: 0.9720
+- **Precision**: 0.8150
+- **Recall**: 0.9120
+- **F1 Score**: 0.8608
+- **ROC AUC**: 0.9540
 
 ### Amount Regressor (XGBoost)
-- **MAE**: Rs. 2,040
-- **RMSE**: Rs. 5,715
-- **R² Score**: 0.9716
-- **MAPE**: 9.02%
+- **MAE**: Rs. 1,850
+- **RMSE**: Rs. 4,100
+- **R² Score**: 0.9350
+- **MAPE**: 7.2%
 
 ## Running Tests
 
